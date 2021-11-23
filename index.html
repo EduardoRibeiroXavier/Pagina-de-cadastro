@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/91a0fc07c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cadastre-se</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Cadastrar</h1>
+        <div id="msgError" class = "textError"></div>
+        <div id="msgSuccess" class = "textSuccess"></div>
+        <div class="inputs">
+          <input type="text" id="nome" placeholder="" required />
+          <label for="nome" id="labelNome">Nome</label>
+        </div>
+        <div class="inputs">
+          <input type="text" id="usuario" placeholder="" required />
+          <label for="usuario" id="labelUsuario">Usuário</label>
+        </div>
+        <div class="inputs">
+          <input type="password" id="senha" placeholder="" required />
+          <label for="senha" id="labelSenha">Senha</label>
+          <i class="fas fa-eye" id="VerSenha"></i>
+        </div>
+        <div class="inputs">
+          <input type="password" id="confirmSenha" placeholder="" required />
+          <label for="confirmSenha" id="labelConfirmSenha">
+            Confirmar Senha</label
+          >
+          <i class="fas fa-eye" id="verConfirmSenha"></i>
+        </div>
+        <div class="button">
+          <button onclick="cadastrar()">Cadastrar</button>
+        </div>
+      </div>
+    </div>
+    <script src="cadastrar.js"></script>
+  </body>
+</html>
