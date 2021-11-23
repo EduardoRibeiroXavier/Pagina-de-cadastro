@@ -93,7 +93,7 @@ function cadastrar() {
     msgError.setAttribute("style", "display:none");
     msgError.innerHTML = "";
     setTimeout(() => {
-      window.location.href  = '../Login-box/Login.html';
+      window.location.href  = 'https://eduardoribeiroxavier.github.io/Pagina-de-Login/';
     }, 3000);
   } else {
     msgError.setAttribute("style", "display:block");
